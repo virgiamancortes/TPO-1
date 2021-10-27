@@ -5,6 +5,7 @@ body > header > h1{
     
     color: black;
     font-size: 3.75em;
+    text-align: center;
     
 }
 /**Diseño del header**/
@@ -26,6 +27,8 @@ body > nav > a{
     
     color: white;
     font-size: 1.25em;
+    
+    
 
 }
 /**Diseño de los íconos que se encuentran en el nav**/
@@ -55,6 +58,17 @@ a:hover {
       color: white;
       
   }
-
-
+  body > footer > a > i{
+      color: white;
+  }
+  span{
+      color: white;
+  }
+/** Diseño de los componentes de la tabla de la pag index **/
+  h3{
+    text-align: left;
+ }
+body > table > tbody > tr > th > p{
+    text-align: justify;
+ }
 
