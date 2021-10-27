@@ -1,37 +1,52 @@
 *{ font-family: 'Poppins', sans-serif;} /** todos los elementos misma fuente**/
 
+/** diseño del título de la página**/
 body > header > h1{ 
     
     color: black;
-    font-size: 60px;
+    font-size: 3.75em;
     
 }
+/**Diseño del header**/
 header {
     background-color: rgb(231, 8, 8);
-
+    margin-bottom: -40px;
+    border-color: rgb(231, 8, 8);
+    margin-top: 10px;
+  
 }
+/** Diseño del nav**/
 nav{
     background-color: rgb(231, 8, 8);
+
+    
 }
+/** Diseño de los componentes "a" que se encuentran en el nav**/
 body > nav > a{
     
     color: white;
-    font-size: 20px;
+    font-size: 1.25em;
 
 }
+/**Diseño de los íconos que se encuentran en el nav**/
 body > nav > i {
     color: white;
     
 
 }
+/**Diseño de los h2**/
 body > h2 {
-    font-size: 40px;
+    font-size: 2.5em;
 
 }
+/** Color del fondo del body**/
 body{
     background-color: rgb(252, 241, 241);
 }
-
+/** hover de los elementos a **/
+a:hover {
+    background-color: rgb(185, 5, 5);
+  }
 
 
 
