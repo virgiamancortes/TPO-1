@@ -43,9 +43,17 @@ body > h2 {
 body{
     background-color: rgb(252, 241, 241);
 }
-/** hover de los elementos a **/
+/** primer pseudo class hover **/
 a:hover {
     background-color: rgb(185, 5, 5);
+  }
+  /*Diseño del footer*/
+  footer{
+      background-color: rgb(27, 27, 27);
+  }
+  footer>p{
+      color: white;
+      
   }
 
 
