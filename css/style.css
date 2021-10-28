@@ -1,11 +1,12 @@
 *{ font-family: 'Poppins', sans-serif;} /** todos los elementos misma fuente**/
 
 /** diseño del título de la página**/
-body > header > h1{ 
+body > header > div > h1{ 
     
     color: black;
     font-size: 3.75em;
     text-align: center;
+     
     
 }
 /**Diseño del header**/
@@ -16,6 +17,13 @@ header {
     margin-top: 10px;
   
 }
+body > header > div{
+    background-color: rgb(231, 8, 8);
+    
+    animation-name: cambiarcolor; /**Aca aplicamos la animación**/
+    animation-duration: 2s;
+}
+
 /** Diseño del nav**/
 nav{
     background-color: rgb(231, 8, 8);
@@ -27,6 +35,8 @@ body > nav > a{
     
     color: white;
     font-size: 1.25em;
+    transition-duration: 0.5s;
+    -o-transition-timing-function: linear;
     
     
 
@@ -40,6 +50,7 @@ body > nav > i {
 /**Diseño de los h2**/
 body > h2 {
     font-size: 2.5em;
+    
 
 }
 /** Color del fondo del body**/
@@ -71,4 +82,8 @@ a:hover {
 body > table > tbody > tr > th > p{
     text-align: justify;
  }
-
+ /** Animación**/
+ @keyframes cambiarcolor {
+    from {background-color: black;}
+    to {background-color: rgb(231, 8, 8);}
+  }
