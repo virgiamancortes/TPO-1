@@ -85,7 +85,7 @@ body > table > tbody > tr > th > p{
     from {background-color: black;}
     to {background-color: rgb(231, 8, 8);}
   }
-/** MQ**/
+/** MQ que usamos para index.html y circuitos.html**/
 
 
 /* Celulares */
@@ -114,11 +114,15 @@ body > table > tbody > tr > th > p{
       nav{
           width: 100%;
       }
+      footer{
+          width: 100%;
+      }
       img{
         width: 100%;
         height: auto;
     }
     
+     
     
 }
 
@@ -163,4 +167,40 @@ body > table > tbody > tr > th > p{
         height: 283px;
      }
 }
-/* imagenes*/
+/*Grid para equipos.html*/
+.grid_container-1 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  .grid_item-1 {
+    box-sizing: border-box;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+  .grid_container-2 {
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  .grid_item-2 {
+    
+    box-sizing: border-box;
+    font-size: 20px;
+    text-align: center;
+  }
+  .grid_container-3 {
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  .grid_item-3 {
+    
+    box-sizing: border-box;
+    font-size: 20px;
+    text-align: center;
+  }
