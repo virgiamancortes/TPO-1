@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <title>Fórmula 1234</title>
     <script src="https://kit.fontawesome.com/5d46542168.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 </head>
 
 <body>
@@ -28,28 +29,32 @@
     <h2>Suscribirse</h2>
     <p>Suscribite a nuestro newsteller y recibi toda la información en tu mail</p>
     <main>
-        <form id="formulario">
-            <label for="nombre">Nombre: </label><input size="30" type="text" name="nombre">
-            <br>
-            <label for="apellido">Apellido:</label><input size="30" type="text" name="apellido">
-            <br>
-            <label for="fecha">Fecha de nacimiento:</label><input type="date" name="fecha">
-            <br>
-            <label for="email">Email:</label><input type="email" name="email">
-            <br>
-            <p>Seleccione su equipo favorito</p>
-            <select name="equipo favorito">
-                <p>marca</p>
-                <option>FERRARE</option>
-                <option>MERCHEDHES</option>
-                <option>PINK BULL</option>
-            </select>
-            <br>
-            <input type="checkbox" name="Terminos"> Acepto los terminos y condiciones
-            <br>
+        <div class="container">
+            <div class="item">
+                <form id="formulario" name="formulario" onsubmit="return validacion()" method="post">
+                    <label for="nombre">Nombre: </label><input size="30" type="text" name="nombre">
+                    <br>
+                    <label for="apellido">Apellido:</label><input size="30" type="text" name="apellido">
+                    <br>
+                    <label for="fecha">Fecha de nacimiento:</label><input type="date" name="fecha">
+                    <br>
+                    <label for="email">Email:</label><input type="email" name="email">
+                    <br>
+                    <p>Seleccione su equipo favorito</p>
+                    <select name="equipo favorito">
+                        <p>marca</p>
+                        <option>FERRARE</option>
+                        <option>MERCHEDHES</option>
+                        <option>PINK BULL</option>
+                    </select>
+                    <br>
+                    <input type="checkbox" name="Terminos"> Acepto los terminos y condiciones
+                    <br>
 
-            <input type="submit" value="enviar"><i class="far fa-paper-plane"></i>
-        </form>
+                    <input type="submit" value="enviar"><i class="far fa-paper-plane"></i>
+                </form>
+            </div>
+        </div>
 
 
     </main>

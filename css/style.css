@@ -15,6 +15,7 @@ header {
     margin-bottom: -40px;
     border-color: rgb(231, 8, 8);
     margin-top: 10px;
+    
   
 }
 body > header > div{
@@ -35,10 +36,7 @@ body > nav > a{
     
     color: white;
     font-size: 1.25em;
-    transition-duration: 0.5s;
-    -o-transition-timing-function: linear;
-    
-    
+    transition-duration: 0.5s; 
 
 }
 /**Diseño de los íconos que se encuentran en el nav**/
@@ -87,3 +85,82 @@ body > table > tbody > tr > th > p{
     from {background-color: black;}
     to {background-color: rgb(231, 8, 8);}
   }
+/** MQ**/
+
+
+/* Celulares */
+@media only screen and (min-width: 600px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        align-content: start
+      }
+      .container:after {
+        display: block;
+        
+        margin: 10px;
+        flex: 999 999 auto;
+      }
+      .item {
+        flex: 0 0 auto;
+        margin: 10px;
+      }
+      header{
+          width:100%;
+      }
+      nav{
+          width: 100%;
+      }
+      img{
+        width: 100%;
+        height: auto;
+    }
+    
+    
+}
+
+/* Tablets */
+@media only screen and (min-width: 768px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        align-content: start;
+        
+        
+      }
+      .container:after {
+        display: block;
+        
+        margin: 12px;
+        flex: 999 999 auto;
+      }
+      .item {
+        flex: 0 0 auto;
+        margin: 12px;
+      }
+      header{
+        width:100%;
+    }
+    nav{
+        width: 100%;
+    }
+    #circuito{
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+     #circuito{
+        width: 474px; 
+        height: 283px;
+     }
+}
+/* imagenes*/
