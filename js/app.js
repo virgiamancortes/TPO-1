@@ -3,5 +3,7 @@ function validacion() {
     if (x == "") {
       alert("Tiene que completar el mail");
       return false;
-    }
+     } 
+    else 
+       alert("Gracias por su suscribirse")
   }
